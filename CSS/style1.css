@@ -2,6 +2,7 @@
     box-sizing: content-box;
     padding: 0;
     margin: 0;
+    
 }
 
 :root{
@@ -15,25 +16,50 @@
     width: 100vw;
     height: 200px;
     background-color: var(--color1);
-}
-.navbar{
-    width: inherit;
-    height: inherit;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 500px;
 }
 .login_area{
     height: inherit;
-    width: 300px;
+    width: 400px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
 }
 
-.buttons{
-    height: 40px;
-    width: 60px;
+.login_button{
+    grid-column: 6 / 9;
+    grid-row: 7 / 9;
 }
+
+.register_button{
+    grid-column: 6 / 9;
+    grid-row: 2 / 4;
+}
+
+.profile_info{
+    grid-column: 2 / 5;
+    grid-row: 2 / 9;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    grid-template-rows: repeat(6, 1fr);
+}
+.profile_info div{
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    border-radius: 50%;
+    background: url("../img/pfp.png");
+    margin: 5px;
+}
+
+.profile_info i{
+    grid-column: 1 / 5;
+    grid-row: 5 / 7;
+    font-size: 24px;
+    justify-self: center;
+    align-self: center;
+    font-style: normal;
+}
+
