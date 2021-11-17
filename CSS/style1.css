@@ -16,3 +16,24 @@
     height: 200px;
     background-color: var(--color1);
 }
+.navbar{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 500px;
+}
+.login_area{
+    height: inherit;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.buttons{
+    height: 40px;
+    width: 60px;
+}
