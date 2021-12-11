@@ -8,10 +8,63 @@
     <title>Aplicacion de notas</title>
 </head>
 <body>
-    <div class="">
-        <nav class="h-32 w-full bg-blue-700">
-            
+    <div class="grid grid-cols-12 grid-rows-6 h-screen w-screen overflow-hidden">
+
+        <!--Nav-->
+        <nav class="row-span-1 col-span-full w-full bg-blue-700 text-center">
+            <span class="text-white text-2xl border-white border-b-2">Notas</span>
         </nav>
+
+        <!--Login area-->
+        <section class="row-span-5 col-span-2 py-4 px-1 bg-gray-300 flex flex-col">
+
+            <article class="flex flex-row gap-1 bg-blue-400 rounded-t-md h-16 w-full divide-x-2 divide-white">
+                <div class="w-1/2 h-full flex justify-center items-center hover:bg-blue-500 transition-all">
+                    <span class="text-md border-b-2">Login</span>
+                </div>
+                <div class="w-1/2 h-full flex justify-center items-center hover:bg-blue-500 transition-all">
+                    <span class="text-md border-b-2">Register</span>
+                </div>
+            </article>
+
+            <!--Register-->
+            <article class="bg-blue-500 w-full h-full p-3 rounded-b-md">
+                <form class="w-full h-fit flex flex-col justify-start">
+                        <span class="ml-8 mt-16 select-none">Username: </span>
+                        <input type="text" class="p-1 mx-8 mb-4 w-32 focus:w-52 transition-all hover:w-52" placeholder="username...">
+                        <span class="ml-8 select-none">E-mail: </span>
+                        <input type="text" class="p-1 mx-8 mb-4 w-32 focus:w-52 transition-all hover:w-52" placeholder="email...">
+                        <span class="ml-8 select-none">Password: </span>
+                        <input type="password" class="p-1 mx-8 w-32 focus:w-52 transition-all hover:w-52" placeholder="password...">
+                        <button class="my-4 mb-96 self-start mx-8 bg-sky-300 p-2 rounded-md hover:bg-sky-200 transition-all">Register</button>
+                </form>
+                <p class="border-b-2">¿Already have an account?<span> Login</span></p>
+            </article>
+        </section>
+
+        <!-- Screen panel-->
+        <section class="row-span-5 col-span-10 bg-gray-200 p-4 grid">
+            <article class="flex bg-blue-200 rounded-xl border-8 border-blue-300 p-1">
+                <nav class="w-full h-16 bg-sky-300 p-2 rounded-md flex flex-row justify-start items-center border-2 border-white">
+                    <form class="w-56 flex items-center flex-row">
+                        <i class="bg-white border-8 border-white rounded-l-md">
+                            <img src="img/search.png" class="">
+                        </i>
+                        <input type="text" class="bg-gray-100 h-7 p-1 rounded-r-md" placeholder="search...">
+                    </form>
+                    <div class="ml-auto">
+                        <span class="text-white text-lg border-b-2 border-white mx-2">View As</span>
+                        <select name="" id="" class="w-24 bg-gray-100">
+                            <option value="">List</option>
+                            <option value="">Card</option>
+                        </select>
+                    </div>
+                </nav>
+            </article>
+        </section>
+
+
+
     </div>
 
    <script src="JS/main.js"></script> 
